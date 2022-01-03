@@ -5,13 +5,12 @@ import random
 # Create your views here.
 def home(request):
     return render(request, 'gen_pwd/home.html')
-    
+
 def about(request):
     return render(request, 'gen_pwd/about.html')
 
 def password(request):
     character=list("abcdedfghijklmnopqrstuvwxyz")
-    
     thepassword=" "
     length=int(request.GET.get("length",12))
     if request.GET.get("uppercase"):
