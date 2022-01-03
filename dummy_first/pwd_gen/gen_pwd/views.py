@@ -5,6 +5,7 @@ import random
 # Create your views here.
 def home(request):
     return render(request, 'gen_pwd/home.html')
+    
 def about(request):
     return render(request, 'gen_pwd/about.html')
 
